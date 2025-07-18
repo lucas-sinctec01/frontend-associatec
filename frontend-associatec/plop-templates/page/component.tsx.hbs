@@ -1,0 +1,19 @@
+import React from "react";
+import { I{{pascalCase page}}Data } from "../types";
+
+interface Props {
+  data: I{{pascalCase page}}Data[];
+}
+
+export const {{pascalCase page}}View = ({ data }: Props) => {
+  return (
+    <div>
+      <h2>{{pascalCase page}}</h2>
+      <ul>
+        {data.map((item) => (
+          <li key={item.id}>{item.nome}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};

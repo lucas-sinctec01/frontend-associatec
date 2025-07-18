@@ -1,0 +1,14 @@
+import { useEffect, useState } from "react";
+import { I{{pascalCase page}}Data } from "../types";
+
+export function use{{pascalCase page}}() {
+  const [data, setData] = useState<I{{pascalCase page}}Data[]>([]);
+
+  useEffect(() => {
+    setData([
+      { id: 1, nome: "Teste" },
+    ]);
+  }, []);
+
+  return { data };
+}

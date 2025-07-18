@@ -1,0 +1,58 @@
+.custom-side-menu .ant-menu-submenu-open > .ant-menu-submenu-title,
+.custom-side-menu .ant-menu-submenu-selected > .ant-menu-submenu-title,
+.custom-side-menu .ant-menu-item-selected,
+.ant-layout-sider-trigger
+.custom-side-menu .ant-menu-item-active {
+  background-color: #96002F !important;
+}
+
+.custom-side-menu .ant-menu-submenu-arrow::before,
+.custom-side-menu .ant-menu-submenu-arrow::after {
+  background: #fff !important;
+} 
+
+:where(.css-dev-only-do-not-override-16dneet).ant-layout-sider .ant-layout-sider-trigger {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    height: 48px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    background: #96002F;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+:where(.css-dev-only-do-not-override-16dneet).ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline, :where(.css-dev-only-do-not-override-16dneet).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+    background: #96002F;
+}
+
+:where(.css-dev-only-do-not-override-16dneet).ant-menu-dark.ant-menu-submenu-popup > .ant-menu, 
+:where(.css-dev-only-do-not-override-16dneet).ant-menu-dark > .ant-menu.ant-menu-submenu-popup > .ant-menu {
+  background: #96002F;
+  color: #fff;
+}
+
+.side-menu-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  background: rgba(196, 0, 62, 1);
+  z-index: 2;
+}
+
+.side-menu-logo {
+  width: 165px;
+  height: auto;
+  transition: all 0.2s;
+}
+
+.ant-layout-sider-collapsed .side-menu-logo {
+  width: 70px;
+  height: auto;
+}
